@@ -1,0 +1,9 @@
+class Solution(object):
+    def containDuplicate(self, nums):
+        arr =[]
+        for i in nums:
+            arr.append(i)
+            if i in arr:
+                return True
+            else:
+                return False
