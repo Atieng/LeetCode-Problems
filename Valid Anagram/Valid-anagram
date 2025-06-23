@@ -1,0 +1,13 @@
+def isAnagram(s:str, t:str) ->bool:
+    """
+    An anagram is formed by rearranging the letters of a word to produce another word.
+    This function compares the frequency of characters in both strings using a Counter.
+    If both strings have the same character counts, they are anagrams.
+    """
+    # Compare the length of s and t
+    if len(s) != len(t):
+        return False
+    return sorted(s) == sorted(t)
+
+print(isAnagram("listen", "silent"))
+print(isAnagram("car", "rat"))
