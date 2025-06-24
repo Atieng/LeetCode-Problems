@@ -9,7 +9,7 @@ class Solution(object):
          
         
          for i in range(len(strs[0])):
-              char = strs[0][i]
+              char = strs[0]
               for s in strs[0][1:]:
                    if i>= len(s) or s[i] !=char:
                         return strs[0][:i]
